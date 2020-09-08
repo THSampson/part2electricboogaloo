@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Weather from './weather/Weather';
 
 function App() {
   const [longitude, setLongitude] = useState();
@@ -19,8 +20,7 @@ function App() {
   return (
     <div className="App">
       {getLocation()}
-      <p>{latitude}</p>
-      <p>{longitude}</p>
+      <Weather latitude={latitude} longitude={longitude}/>
     </div>
   );
 }
