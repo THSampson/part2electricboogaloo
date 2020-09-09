@@ -22,14 +22,13 @@ const RestApi = (props) => {
          
             })
             .then(res => res.json())
-            .then(data => {console.log(data); setResults(data); grabName(data)})
+            .then(data => {setResults(data); grabName(data)})
             .catch(err => console.log(err))
 
 
 
  function grabName(r) {
-     console.log(r.nearby_restaurants[0].restaurant.name);
-     return setName(r.nearby_restaurants[0].restaurant.name)
+       return setName(r.nearby_restaurants[0].restaurant.name)
  }
  return(
    <div>
