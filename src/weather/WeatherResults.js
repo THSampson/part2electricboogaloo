@@ -9,7 +9,7 @@ const WeatherResults = (props) => {
     // props.units === 'imperial' ? setDegrees('Fahrenheit') : setDegrees('Celsius');
     return (
         <Card>
-            <CardTitle>Current Weather in {props.city}</CardTitle>
+            <CardTitle tag="h1">Current Weather in {props.city}</CardTitle>
             <CardBody>
             <CardSubtitle>Current Temperature: {props.temperature}</CardSubtitle>
             <CardText>Sky Currently: {props.description}</CardText>
