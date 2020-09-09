@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import Rest from './rest/Rest'
+import Restaurants from './rest/Restaurants';
 
 function App() {
   const [longitude, setLongitude] = useState();
@@ -19,7 +19,9 @@ function App() {
   return (
     <div className="App">
       {getLocation()}
-      <Rest longitude={longitude} latitude={latitude} />
+      longitude: {longitude} latitude: {latitude}
+      <Restaurants longitude={longitude} latitude={latitude} />
+      
       
     </div>
   );
