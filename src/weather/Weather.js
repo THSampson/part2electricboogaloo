@@ -38,7 +38,6 @@ const Weather = (props) => {
         }
 
         function grabTemperature(w) {
-            console.log(w);
             return (setTemperature(w.main.temp)); 
         };
 

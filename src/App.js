@@ -12,7 +12,7 @@ function App() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(showPosition);
     } 
-
+  }
   const showPosition = (position) => {
     setLatitude(position.coords.latitude);
     setLongitude(position.coords.longitude);
